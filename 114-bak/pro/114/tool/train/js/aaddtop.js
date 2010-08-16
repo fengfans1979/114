@@ -1,0 +1,1 @@
+document.writeln("<a href=\"http:\/\/www.114la.com\" target=\"_blank\"><img src=\"images\/b1.gif\" \/><\/a>")

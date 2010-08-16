@@ -1,0 +1,1 @@
+document.writeln("<iframe scrolling=\"no\" height=\"60\" frameborder=\"0\" width=\"468\" src=\"images\/banner.htm\"><\/iframe>")

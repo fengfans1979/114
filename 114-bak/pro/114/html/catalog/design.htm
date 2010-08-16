@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>设计-辽宁林职院内网导航</title>
+<link href="http://218.25.21.98:8002/114/themes/default/page.css" rel="stylesheet" type="text/css" />
+<link id="skin" href="http://218.25.21.98:8002/114/themes/default/skins/blue/page.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://218.25.21.98:8002/114/themes/default/js/ylmf.cai.js"></script>
+<script type="text/javascript" src="http://218.25.21.98:8002/114/themes/default/js/config.js"></script>
+<script type="text/javascript" src="http://218.25.21.98:8002/114/themes/default/js/base.js"></script>
+<script type="text/javascript">
+var PageSkin = (function(){
+	var PageskinCookie = userCookie.init();
+	if(PageskinCookie.is("style")){
+		var skins = ["blue","orange","green","purple","blue2"];
+		var skinName = skins[Number(PageskinCookie.get("style"))];
+		document.getElementById("skin").href = "http://218.25.21.98:8002/114/themes/default/skins/"+skinName+"/page.css";
+	}
+	return{
+		cookie:PageskinCookie
+	}
+})()
+
+</script>
+<base target="_blank" />
+</head>
+<body>
+<div id="page">
+<script type="text/javascript">
+	(function(){
+		if(PageSkin.cookie.is("bg")){
+			var value = PageSkin.cookie.get("bg");
+			var img = "http://218.25.21.98:8002/114/themes/default/images/bg/"+Yl.trim(value);
+			if(Yl.trim(value)!=="default"){
+				$("#page").setStyle("background","url("+img+")");
+			}else{
+				$("#page").setStyle("background","");
+			}
+		}else{
+			return;
+		}
+	})()
+</script>
+    <div class="wrap">
+        <div id="header" class="clearfix">
+                <div id="search" class="clearfix">
+                <div id="search-menu" class="clearfix">
+                    <ul class="clearfix">
+                        <li><a rel="s115">115聚搜</a></li>
+                        <li class="current"><a rel="web">网 页</a></li>
+                        <li><a rel="mp3">MP3</a></li>
+                        <li><a rel="v115">影 视</a></li>
+                        <li><a rel="image">图 片</a></li>
+                        <li><a rel="zhidao">知 道</a></li>
+                    </ul>
+                    <ul  class="clearfix" style="margin:0">
+                        <li id="search-menu-more"><span><a class="more" id="smore">更 多</a></span>
+                            <div id="smp"> <a href=" http://video.baidu.com/?tn=lqowen_1_pg">视 频</a> <a href=" http://tieba.baidu.com/?source=114la.com">贴 吧</a> <a href=" http://baike.baidu.com/?source=114la.com">百 科</a> <a href=" http://stock.baidu.com/?source=114la.com">股 票</a> <a href=" http://u.115.com/?11413">网 盘</a>  <a href=" http://fav.115.com/?source=114la.com">收藏夹</a>  <a href=" http://tool.115.com/?11413">工具箱</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search-form" class="bd">
+                <div class="search-bg">
+                    <div class="con">
+                    <div id="sengine" class="clearfix">
+                        <form id="searchForm" action="http://www.baidu.com/baidu" method="get" target="_blank">
+                            <label for="baidu"><a href="#"><img src="http://218.25.21.98:8002/114/static/images/sl/logox3.gif" width="79" height="27" /></a></label>
+                            <div class="input">
+                                <input type="text" id="searchInput" name="wd" autocomplete="off" />
+                            </div>
+                            <input type="submit" id="searchBtn" class="btn" value="百度一下" />
+                            <input type="hidden" name="tn" value="lqowen_1_pg" />
+                           
+                        </form>
+                     </div></div>   
+                        
+                        
+                    </div>
+                    <!--/ sengine-->
+                    
+                </div>
+            </div>
+            <h1 id="logo"><a href="http://218.25.21.98:8002/114" target="_parent"><img src="http://218.25.21.98:8002/114/static/images/logo.gif" height="69" width="117" /></a></h1>
+
+        </div><!--/ header-->    <div id="guide" class="bd">
+    <dl>
+    <dt>您当前的位置：</dt>
+    <dd><a href="http://218.25.21.98:8002/114" target="_parent">首页</a></dd>
+    <dd><em>&gt;</em><a href="http://218.25.21.98:8002/114/html/catalog/4.htm" >电脑网络</a></dd>    <dd><em>&gt;</em>设计</dd>    </dl>
+    <ul>
+    <li class="sethome"><a href="javascript:void(0)" onclick="Yl.setHome(this,'http://218.25.21.98:8002/114')" target="_parent" class="gray6">设本站为主页</a></li>
+    <li class="feedback"><a href="http://218.25.21.98:8002/114/feedback/" class="gray6">网友留言</a></li>
+    </ul>
+    
+    </div><!--/ guide-->
+        
+    <div id="catenav">
+    	<ul class="clearfix">
+                	<li><a href="#2106" target="_parent">设计综合</a> | </li>
+                	<li><a href="#2107" target="_parent">设计素材</a> | </li>
+                	<li><a href="#2102" target="_parent">平面设计</a> | </li>
+                	<li><a href="#2103" target="_parent">室内设计</a> | </li>
+                	<li><a href="#2104" target="_parent">建筑设计</a> | </li>
+                	<li><a href="#2105" target="_parent">服装设计</a> | </li>
+                	<li><a href="#2110" target="_parent">设计竞标</a> | </li>
+                	<li><a href="#1110" target="_parent">字体下载</a>  </li>
+                </ul>
+    </div><!--/ catenav-->
+<div class="bd" id="cate">
+	<h3 id="2106">设计综合</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.visionunion.com" target="_blank">视觉同盟</a></li>
+                                <li><a href="http://www.arting365.com" target="_blank">中国艺术设计联盟</a></li>
+                                <li><a href="http://www.chinavisual.com" target="_blank">视觉中国</a></li>
+                                <li><a href="http://www.gjart.cn" target="_blank">国际艺术界网</a></li>
+                                <li><a href="http://www.dolcn.com" target="_blank">设计在线</a></li>
+                                <li><a href="http://www.chinaddu.com" target="_blank">设计中国</a></li>
+                                <li><a href="http://www.52design.com" target="_blank">中国创意在线</a></li>
+                                <li><a href="http://www.ionly.com.cn" target="_blank">东方视觉</a></li>
+                                <li><a href="http://bbs.redocn.com" target="_blank">红动中国</a></li>
+                                <li><a href="http://www.wmgdesign.com" target="_blank">顶尖设计</a></li>
+                                <li><a href="http://www.333cn.com" target="_blank">中国设计之窗</a></li>
+                                <li><a href="http://www.cndu.cn" target="_blank">设计联盟</a></li>
+                                <li><a href="http://www.okvi.com" target="_blank">视觉联盟</a></li>
+                                <li><a href="http://www.shejifang.com" target="_blank">设计坊</a></li>
+                                <li><a href="http://design.icxo.com" target="_blank">哈佛设计</a></li>
+                                <li><a href="http://www.blueidea.com" target="_blank">蓝色理想</a></li>
+                                <li><a href="http://www.chda.net" target="_blank">设计艺术家网</a></li>
+                                <li><a href="http://www.fansart.com" target="_blank">艺术迷</a></li>
+                                <li><a href="http://www.sj33.cn" target="_blank">设计之家</a></li>
+                                <li><a href="http://www.missyuan.com" target="_blank">思缘论坛</a></li>
+                 </ul>
+	<h3 id="2107">设计素材</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.sc-cn.net" target="_blank">素材中国</a></li>
+                                <li><a href="http://www.zcool.com.cn" target="_blank">站酷</a></li>
+                                <li><a href="http://sc.chinaz.com" target="_blank">站长素材</a></li>
+                                <li><a href="http://www.tucoo.com" target="_blank">图酷</a></li>
+                                <li><a href="http://www.3lian.com" target="_blank">3lian素材网</a></li>
+                                <li><a href="http://www.jianjie8.com" target="_blank">简洁设计网</a></li>
+                                <li><a href="http://sc.52design.com" target="_blank">52design素材库</a></li>
+                                <li><a href="http://www.haosc.cn" target="_blank">好素材网!</a></li>
+                                <li><a href="http://www.114sucai.com" target="_blank">素材黄页</a></li>
+                                <li><a href="http://www.ooopic.com" target="_blank">我图网</a></li>
+                                <li><a href="http://www.lanrentuku.com" target="_blank">懒人图库</a></li>
+                                <li><a href="http://www.mbsky.com" target="_blank">模板天下</a></li>
+                                <li><a href="http://bestmoban.com" target="_blank">最好模版</a></li>
+                                <li><a href="http://www.mb5u.com" target="_blank">模板无忧</a></li>
+                                <li><a href="http://www.wzsky.net" target="_blank">设计前沿</a></li>
+                                <li><a href="http://www.veeqi.com" target="_blank">维奇素材网</a></li>
+                 </ul>
+	<h3 id="2102">平面设计</h3>
+    <ul class="clearfix">
+                        <li><a href="http://gra.dolcn.com" target="_blank">中国平面设计在线</a></li>
+                                <li><a href="http://www.apoints.com" target="_blank">圆点视线</a></li>
+                                <li><a href="http://www.chinavisual.com" target="_blank">视觉中国</a></li>
+                                <li><a href="http://www.heyshow.com" target="_blank">黑秀网</a></li>
+                                <li><a href="http://www.4a98.com" target="_blank">4A酒吧</a></li>
+                                <li><a href="http://www.the6cn.com" target="_blank">第六感</a></li>
+                                <li><a href="http://www.23ps.com" target="_blank">图片处理教程网</a></li>
+                                <li><a href="http://www.smzy.com" target="_blank">数码资源网</a></li>
+                                <li><a href="http://www.swcool.com" target="_blank">形色主义</a></li>
+                                <li><a href="http://bbs.16xx8.com" target="_blank">Photoshop教程论坛</a></li>
+                 </ul>
+	<h3 id="2103">室内设计</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.ciid.com.cn" target="_blank">中国室内设计网</a></li>
+                                <li><a href="http://bbs.cool-de.com" target="_blank">中国室内设计联盟</a></li>
+                                <li><a href="http://www.maxsou.com" target="_blank">室内设计资料网</a></li>
+                                <li><a href="http://www.cool-de.com" target="_blank">中国室内装饰网</a></li>
+                                <li><a href="http://www.z6.cn/index.html" target="_blank">大室网</a></li>
+                                <li><a href="http://www.idchina.net" target="_blank">美国室内设计中文网</a></li>
+                                <li><a href="http://www.tianwu.com.cn" target="_blank">深圳室内设计网</a></li>
+                                <li><a href="http://www.snren.com" target="_blank">中国室内人设计师网</a></li>
+                                <li><a href="http://www.dr.eju.cn" target="_blank">室内设计师联盟</a></li>
+                 </ul>
+	<h3 id="2104">建筑设计</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.china-designer.com" target="_blank">建筑与室内设计网</a></li>
+                                <li><a href="http://www.chinabuilding.com.cn" target="_blank">国家建筑标准设计网</a></li>
+                                <li><a href="http://www.abbs.com.cn" target="_blank">ABBS建筑论坛</a></li>
+                                <li><a href="http://www.333cn.com/architecture" target="_blank">中国设计在线-建筑设计</a></li>
+                 </ul>
+	<h3 id="2105">服装设计</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.a1988.com" target="_blank">中国服装设计网</a></li>
+                                <li><a href="http://bbs.3fnet.com" target="_blank">服装设计吧</a></li>
+                                <li><a href="http://www.pop-fashion.com" target="_blank">服饰流行前线</a></li>
+                                <li><a href="http://www.topsjs.com" target="_blank">国际服装设计网</a></li>
+                                <li><a href="http://www.efu.com.cn/design" target="_blank">中国服装网-服装设计</a></li>
+                                <li><a href="http://www.coldress.com" target="_blank">中国服装设计师论坛</a></li>
+                                <li><a href="http://nufang.net.cn" target="_blank">怒放服装设计论坛</a></li>
+                                <li><a href="http://www.sxxl.com" target="_blank">蝶讯网</a></li>
+                 </ul>
+	<h3 id="2110">设计竞标</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.zhengjicn.com" target="_blank">中国征集网</a></li>
+                                <li><a href="http://www.toidea.com" target="_blank">创易网</a></li>
+                                <li><a href="http://www.51ps.com" target="_blank">图片作坊威客网</a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1110">字体下载</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.font.com.cn" target="_blank">字体中国</a></li>
+                                <li><a href="http://www.fontp.com" target="_blank">字铺</a></li>
+                                <li><a href="http://font.chinaz.com" target="_blank">中国站长站-字体下载</a></li>
+                                <li><a href="http://www.homefont.cn" target="_blank">字体之家</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.1001fonts.com" target="_blank">1001Fonts</a></li>
+                                <li><a href="http://www.dafont.com" target="_blank">Dafont</a></li>
+                                <li><a href="http://simplythebest.net/fonts" target="_blank">SimplytheBestFonts</a></li>
+                 </ul>
+</div>    <div id="meta" class="clearfix bd">
+        <p>
+        <a href="http://218.25.21.98:8002/114" class="back" target="_parent"><span>返回</span><em class="fl">返回</em></a>
+        <a class="close" href="javascript:closeWin()" target="_self"><span>关闭</span><em class="fl">关闭</em></a>
+        </p>
+    </div>
+    <div id="gotop" class="clearfix">
+    	<a href="#page" target="_parent">返回顶部</a><br /><br />
+    </div>
+    
+    <a href="javascript:void(0)" target="_self" id="addmyfav" style="display:none;" title="添加到自定义收藏夹">加入首页自定义收藏</a>
+    
+    </div><!--/ wrap-->
+</div><!--/ page-->
+<script type="text/javascript">
+	function closeWin(){
+	   window.open("","_self");
+	   window.top.opener=null;
+	   window.top.close();
+	 }
+</script>
+<script type="text/javascript" src="http://218.25.21.98:8002/114/themes/default/js/page.js"></script>
+<div style="display:none">请在此处输入统计代码！</div>
+</body>
+</html>

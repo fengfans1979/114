@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>站长工具-114啦[Www.114La.Com] -上网就上114啦！</title>
+<link href="http://218.25.21.98:8002/114/themes/default/page.css" rel="stylesheet" type="text/css" />
+<link id="skin" href="http://218.25.21.98:8002/114/themes/default/skins/blue/page.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://218.25.21.98:8002/114/themes/default/js/ylmf.cai.js"></script>
+<script type="text/javascript" src="http://218.25.21.98:8002/114/themes/default/js/config.js"></script>
+<script type="text/javascript" src="http://218.25.21.98:8002/114/themes/default/js/base.js"></script>
+<script type="text/javascript">
+var PageSkin = (function(){
+	var PageskinCookie = userCookie.init();
+	if(PageskinCookie.is("style")){
+		var skins = ["blue","orange","green","purple","blue2"];
+		var skinName = skins[Number(PageskinCookie.get("style"))];
+		document.getElementById("skin").href = "http://218.25.21.98:8002/114/themes/default/skins/"+skinName+"/page.css";
+	}
+	return{
+		cookie:PageskinCookie
+	}
+})()
+
+</script>
+<base target="_blank" />
+</head>
+<body>
+<div id="page">
+<script type="text/javascript">
+	(function(){
+		if(PageSkin.cookie.is("bg")){
+			var value = PageSkin.cookie.get("bg");
+			var img = "http://218.25.21.98:8002/114/themes/default/images/bg/"+Yl.trim(value);
+			if(Yl.trim(value)!=="default"){
+				$("#page").setStyle("background","url("+img+")");
+			}else{
+				$("#page").setStyle("background","");
+			}
+		}else{
+			return;
+		}
+	})()
+</script>
+    <div class="wrap">
+        <div id="header" class="clearfix">
+                <div id="search" class="clearfix">
+                <div id="search-menu" class="clearfix">
+                    <ul class="clearfix">
+                        <li><a rel="s115">115聚搜</a></li>
+                        <li class="current"><a rel="web">网 页</a></li>
+                        <li><a rel="mp3">MP3</a></li>
+                        <li><a rel="v115">影 视</a></li>
+                        <li><a rel="image">图 片</a></li>
+                        <li><a rel="zhidao">知 道</a></li>
+                    </ul>
+                    <ul  class="clearfix" style="margin:0">
+                        <li id="search-menu-more"><span><a class="more" id="smore">更 多</a></span>
+                            <div id="smp"> <a href=" http://video.baidu.com/?tn=lqowen_1_pg">视 频</a> <a href=" http://tieba.baidu.com/?source=114la.com">贴 吧</a> <a href=" http://baike.baidu.com/?source=114la.com">百 科</a> <a href=" http://stock.baidu.com/?source=114la.com">股 票</a> <a href=" http://u.115.com/?11413">网 盘</a>  <a href=" http://fav.115.com/?source=114la.com">收藏夹</a>  <a href=" http://tool.115.com/?11413">工具箱</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search-form" class="bd">
+                <div class="search-bg">
+                    <div class="con">
+                    <div id="sengine" class="clearfix">
+                        <form id="searchForm" action="http://www.baidu.com/baidu" method="get" target="_blank">
+                            <label for="baidu"><a href="#"><img src="http://218.25.21.98:8002/114/static/images/sl/logox3.gif" width="79" height="27" /></a></label>
+                            <div class="input">
+                                <input type="text" id="searchInput" name="wd" autocomplete="off" />
+                            </div>
+                            <input type="submit" id="searchBtn" class="btn" value="百度一下" />
+                            <input type="hidden" name="tn" value="lqowen_1_pg" />
+                           
+                        </form>
+                     </div></div>   
+                        
+                        
+                    </div>
+                    <!--/ sengine-->
+                    
+                </div>
+            </div>
+            <h1 id="logo"><a href="http://218.25.21.98:8002/114" target="_parent"><img src="http://218.25.21.98:8002/114/static/images/logo.gif" height="69" width="117" /></a></h1>
+
+        </div><!--/ header-->    <div id="guide" class="bd">
+    <dl>
+    <dt>您当前的位置：</dt>
+    <dd><a href="http://218.25.21.98:8002/114" target="_parent">首页</a></dd>
+        <dd><em>&gt;</em>站长工具</dd>    </dl>
+    <ul>
+    <li class="sethome"><a href="javascript:void(0)" onclick="Yl.setHome(this,'http://218.25.21.98:8002/114')" target="_parent" class="gray6">设本站为主页</a></li>
+    <li class="feedback"><a href="http://218.25.21.98:8002/114/feedback/" class="gray6">网友留言</a></li>
+    </ul>
+    
+    </div><!--/ guide-->
+        
+    <div id="catenav">
+    	<ul class="clearfix">
+                	<li><a href="#1133" target="_parent">域名主机</a> | </li>
+                	<li><a href="#2109" target="_parent">站长工具</a> | </li>
+                	<li><a href="#2114" target="_parent">流量统计</a> | </li>
+                	<li><a href="#1270" target="_parent">网站推广</a>  </li>
+                </ul>
+    </div><!--/ catenav-->
+<div class="bd" id="cate">
+	<h3 id="1133">域名主机</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.ename.cn" target="_blank">易名中国</a></li>
+                                <li><a href="http://www.net.cn" target="_blank">中国万网</a></li>
+                                <li><a href="http://www.dns.com.cn" target="_blank">新网互联</a></li>
+                                <li><a href="http://www.xinnet.com" target="_blank">新网</a></li>
+                                <li><a href="http://www.35.com" target="_blank">35互联</a></li>
+                                <li><a href="http://www.domain.cn" target="_blank">域名城</a></li>
+                                <li><a href="http://www.bizcn.com" target="_blank">商务中国</a></li>
+                                <li><a href="http://www.33ip.com" target="_blank">枫信科技</a></li>
+                                <li><a href="http://www.china35.com" target="_blank">炎黄数据</a></li>
+                                <li><a href="http://www.adminxy.com" target="_blank">虚拟主机评测网</a></li>
+                                <li><a href="http://dcp.xinnet.com/Modules/agent/domain/domain_manage.jsp" target="_blank">新网域名管理入口</a></li>
+                                <li><a href="http://diy.hichina.com/cgi-bin/login" target="_blank">万网域名管理入口</a></li>
+                                <li><a href="http://mgt.dns.com.cn" target="_blank">新网互联域名管理</a></li>
+                                <li><a href="http://cp.35.com/chinese/chk_domain.html" target="_blank">查询域名是否已被注册</a></li>
+                 </ul>
+	<h3 id="2109">站长工具</h3>
+    <ul class="clearfix">
+                        <li><a href="http://tool.114la.com/record.html" target="_blank">搜索引擎收录查询</a></li>
+                                <li><a href="http://tool.114la.com/keyword.html" target="_blank">关键字排名查询</a></li>
+                                <li><a href="http://tool.114la.com/link.html" target="_blank">反向链接查询</a></li>
+                                <li><a href="http://tool.114la.com/alexa.html" target="_blank">Alexa排名查询</a></li>
+                                <li><a href="http://tool.115.com/?ct=site&ac=pr" target="_blank">网站PR值查询</a></li>
+                                <li><a href="http://tool.114la.com/robot.html" target="_blank">模拟蜘蛛抓取页面</a></li>
+                                <li><a href="http://tool.114la.com/meta.html" target="_blank">网页Meta信息检测</a></li>
+                                <li><a href="http://tool.114la.com/density.html" target="_blank">页面关键字密度查询</a></li>
+                                <li><a href="http://tool.114la.com/links.html" target="_blank">友情链接批量检查</a></li>
+                                <li><a href="http://tool.114la.com/whois.html" target="_blank">域名Whois查询</a></li>
+                                <li><a href="http://tool.114la.com/speedtest.html" target="_blank">网站反应速度测试</a></li>
+                                <li><a href="http://www.archive.org/web/web.php" target="_blank">网站历史查询</a></li>
+                                <li><a href="http://validator.w3.org" target="_blank">W3C WEB标准验证</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.54zz.com" target="_blank">网站历史档案馆</a></li>
+                                <li><a href="http://www.miibeian.gov.cn" target="_blank">信产部网站备案系统</a></li>
+                                <li><a href="http://www.cnnic.cn" target="_blank">中国互联网络信息中心</a></li>
+                                <li><a href="http://www.tool.la" target="_blank">工具啦</a></li>
+                                <li><a href="http://www.55.la" target="_blank">LOGO免费在线制作</a></li>
+                                <li><a href="http://www.locoy.com" target="_blank">火车头采集器</a></li>
+                 </ul>
+	<h3 id="2114">流量统计</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.cnzz.com" target="_blank">中国站长cnzz统计</a></li>
+                                <li><a href="http://www.51.la" target="_blank">我要啦免费统计</a></li>
+                                <li><a href="http://www.linezing.com" target="_blank">Yahoo统计(量子恒道)</a></li>
+                                <li><a href="http://count.51yes.com" target="_blank">51yes网站流量统计</a></li>
+                                <li><a href="http://www.vdoing.com" target="_blank">维度统计</a></li>
+                                <li><a href="http://tongji.baidu.com" target="_blank">百度统计</a></li>
+                                <li><a href="http://www.google.com/analytics/home/provision" target="_blank">谷歌统计</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.textclick.com" target="_blank">太极链流量统计</a></li>
+                 </ul>
+	<h3 id="1270">网站推广</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.google.com/adsense" target="_blank">Google Adsense</a><span style="color:#f00">√</span></li>
+                                <li><a href="http://union.baidu.com/index.html" target="_blank">百度联盟</a></li>
+                                <li><a href="http://www.alimama.com" target="_blank">阿里妈妈</a></li>
+                                <li><a href="http://www.sogou.com/union" target="_blank">搜狗联盟</a></li>
+                                <li><a href="http://www.amazon.cn/lianmeng" target="_blank">卓越网联盟</a></li>
+                                <li><a href="http://www.ad4all.net" target="_blank">美通联盟</a></li>
+                                <li><a href="http://union.flashget.com" target="_blank">快车下载联盟</a></li>
+                                <li><a href="http://union.qihoo.com" target="_blank">奇虎联盟</a></li>
+                                <li><a href="http://newun.zhongsou.com" target="_blank">中搜联盟</a></li>
+                                <li><a href="http://www.google.com/intl/zh-CN/add_url.html" target="_blank">提交Google搜索</a></li>
+                                <li><a href="http://www.baidu.com/search/url_submit.html" target="_blank">提交百度搜索</a></li>
+                                <li><a href="http://search.help.cn.yahoo.com/h4_4.html" target="_blank">提交雅虎搜索</a></li>
+                                <li><a href="http://tellbot.yodao.com/report" target="_blank">提交有道搜索</a></li>
+                 </ul>
+</div>    <div id="meta" class="clearfix bd">
+        <p>
+        <a href="http://218.25.21.98:8002/114" class="back" target="_parent"><span>返回</span><em class="fl">返回</em></a>
+        <a class="close" href="javascript:closeWin()" target="_self"><span>关闭</span><em class="fl">关闭</em></a>
+        </p>
+    </div>
+    <div id="gotop" class="clearfix">
+    	<a href="#page" target="_parent">返回顶部</a><br /><br />
+    </div>
+    
+    <a href="javascript:void(0)" target="_self" id="addmyfav" style="display:none;" title="添加到自定义收藏夹">加入首页自定义收藏</a>
+    
+    </div><!--/ wrap-->
+</div><!--/ page-->
+<script type="text/javascript">
+	function closeWin(){
+	   window.open("","_self");
+	   window.top.opener=null;
+	   window.top.close();
+	 }
+</script>
+<script type="text/javascript" src="http://218.25.21.98:8002/114/themes/default/js/page.js"></script>
+<div style="display:none">请在此处输入统计代码！</div>
+</body>
+</html>

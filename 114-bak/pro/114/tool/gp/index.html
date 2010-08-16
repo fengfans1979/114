@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>股票财经</title>
+<link type="text/css" href="css/stock.css" rel="stylesheet" />
+</head>
+<body>
+<div class="stock">
+
+    <div class="img"><a href="http://www.114la.com/gp/stock.html" target="_blank" target="点击查看详细行情"><img id="js_newchart_img" src="http://image.sinajs.cn/newchart/small/nsh000001.gif?1252068289516" width="250" height="125" /></a></div>
+    <div class="type" id="js_top_datatable"></div>
+    <div class="line"></div>
+    <div class="custom">
+        <div class="inputStock">
+            <label for="stock_inp" class="red">自选股票</label>
+            <input class="stock_inp"  id="stock_inp" onkeyup="onPress(event)" style="color:#999" title="请输入沪深股市 代码/名称/拼音" />
+            <input type="button" value="添 加" onclick="addMystock();"/>
+            <span id="update_time"></span>
+         <div class="meta">
+         	<a href="http://www.114la.com/gp/stock.html" class="red" target="_blank">详细股票行情</a> | <a href="http://www.114la.com/feedback/" target="_blank">意见反馈</a>
+         </div>
+         </div>
+         <div id="my_stock_list">
+        <table cellspacing="1" cellpadding="0" border="0" width="100%" id="my_stock">
+        	<tr class="tl">
+                <th scope="col">我的自选股</th>
+                <th scope="col">当前价</th>
+                <th scope="col">涨跌幅</th>
+                <th scope="col">涨跌额</th>
+                <th scope="col">昨收</th>
+                <th scope="col">今开</th>
+                <th scope="col">最高/最低价</th>
+                <th scope="col">买入/卖出价</th>
+                <th scope="col">删除</th>
+            </tr>
+        </table>
+        </div>
+    </div>
+</div>
+<div id="js_top_load_box"></div>
+</body>
+</html>
+<script type="text/javascript" src="js/access.js"></script>
+<script type="text/javascript" src="js/sina_sug.js"></script>
+<script type="text/javascript">
+	(new SuggestServer()).bind({
+
+		"input": "stock_inp",
+
+		"default": document.getElementById("stock_inp").value,
+
+		"type": "stock",
+
+		"callback": function () {}
+
+	});
+	(function(){
+		var stinp = document.getElementById("stock_inp");
+		stinp.value = stinp.getAttribute("title");
+		stinp.onblur = function (){
+			if(stinp.value==""){
+				stinp.value = stinp.getAttribute("title");
+				stinp.style.color = "#999"
+			}
+		}
+		stinp.onmouseover = function(){
+			if(stinp.value==stinp.getAttribute("title")){
+				stinp.select();
+			}else{
+				stinp.focus();
+			}
+		}
+		stinp.onclick = function(){
+			if(stinp.value==stinp.getAttribute("title")){
+				stinp.value ="";
+				stinp.style.color = "#666"
+			}
+		}
+		//document.getElementById("stock_inp").focus();
+	})();
+</script>
+<script type="text/javascript" src="js/stock.js"></script>
+
+
